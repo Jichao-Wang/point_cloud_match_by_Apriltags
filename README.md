@@ -15,3 +15,6 @@ T8. roslaunch apriltag_ros continuous_detection.launch  # 启动apriltag detecti
 T9. ~/python_ws/pointcloud_match$ python3 pts_generate.py  # 保存上色点云，需要对bag1和bag2分别运行得到2个点云
 T10. ~/ros_ws/data$ rosbag play apriltag3.bag.active  # 播放bag
 T11. ~/python_ws/pointcloud_match$ /home/jichao/anaconda3/envs/pc/bin/python match_2_pandas_file.py pc1.pts modified_pc1.pts pc0_tags_location.csv pc1_tags_location.csv # 将运行2次T3后得到的2组Apriltag坐标区平均值匹配；并且将由T11录制的pc2转到pc1坐标系下
+
+Ref:
+1. https://blog.csdn.net/u012836279/article/details/80203170   求解transform matrix
