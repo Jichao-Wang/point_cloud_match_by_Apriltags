@@ -15,8 +15,9 @@
 - T9. ~/python_ws/pointcloud_match$ python3 pts_generate.py  # 保存上色点云，需要对bag1和bag2分别运行得到2个点云
 - T10. ~/ros_ws/data$ rosbag play apriltag3.bag.active  # 播放bag
 - T11. ~/python_ws/pointcloud_match$ /home/jichao/anaconda3/envs/pc/bin/python match_2_pandas_file.py pc1.pts modified_pc1.pts pc0_tags_location.csv pc1_tags_location.csv # 将运行2次T3后得到的2组Apriltag坐标区平均值匹配；并且将由T11录制的pc2转到pc1坐标系下
+![Screenshot from 2022-03-23 15-45-52](https://user-images.githubusercontent.com/80567697/159648798-743e66de-f8eb-4775-bb8f-cbcdbf07aa40.png)
 
-![how to run](https://user-images.githubusercontent.com/80567697/159459557-342d0870-9cd4-4ec9-92e2-58aff2e2f1af.png)
 
 # Ref:
 1. https://blog.csdn.net/u012836279/article/details/80203170   求解transform matrix
+
