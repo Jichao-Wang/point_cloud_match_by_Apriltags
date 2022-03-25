@@ -205,7 +205,7 @@ def lidarToRGB():
     sub_image = message_filters.Subscriber('/camera/color/image_raw', Image)
     sub_pointcloud = message_filters.Subscriber('/cloud_registered', PointCloud2)
 
-    ts = message_filters.ApproximateTimeSynchronizer([sub_image, sub_pointcloud], 1, 1)
+    ts = message_filters.ApproximateTimeSynchronizer([sub_image, sub_pointcloud], 1, 0.05)
     ts.registerCallback(RGBD_callback)
 
     rospy.spin()
